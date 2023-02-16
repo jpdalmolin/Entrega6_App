@@ -6,5 +6,11 @@ export const styles = StyleSheet.create({
         backgroundColor:'#fff',
         justifyContent: 'center',
         alignItems: 'center',
+        
     },
+    title:{
+        fontSize:14,
+        fontFamily:'Raleway-Medium',
+        padding:10,
+    }
 });
