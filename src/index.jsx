@@ -5,7 +5,9 @@ import React, { useState } from 'react';
 
 import { ActivityIndicator } from 'react-native';
 import AppNavigator from './navigation';
+import { Provider } from 'react-redux';
 import { colors } from './constants/theme/colors';
+import store from './store';
 import { styles } from './styles';
 import {useFonts} from 'expo-font';
 
@@ -34,10 +36,10 @@ if(!loaded) {
 
 
   return (
-    <View style={styles.container}>
-      
-      <AppNavigator/>
-    </View>
+    
+      <Provider store={store}>
+          <AppNavigator/>
+      </Provider>
   );
 }
 export default App;
