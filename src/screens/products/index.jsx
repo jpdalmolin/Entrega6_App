@@ -27,9 +27,10 @@ const Products=({navigation})=>{
     const keyExtractor=(item)=>item.id.toString();
 
 
-    useEffect(()=>{
-        dispatch(filterProducts(category.id))
-    },[]);
+    useEffect(() => {
+        dispatch(filterProducts(category.id));
+      }, []);
+    
 
     
     return (

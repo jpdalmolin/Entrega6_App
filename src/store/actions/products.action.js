@@ -1,9 +1,9 @@
 import { productsTypes } from "../types";
 
-const {SELECTED_PRODUCT,FILTER_PRODUCTS} =productsTypes;
+const {SELECT_PRODUCT,FILTER_PRODUCTS} =productsTypes;
 
 export const selectProduct=(id) => ({
-    type:SELECTED_PRODUCT,
+    type:SELECT_PRODUCT,
     productId:id,
 });
 

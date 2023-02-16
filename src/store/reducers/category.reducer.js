@@ -1,12 +1,12 @@
 import { CATEGORIES } from "../../constants/data/index";
-import { categoryTypes } from "../types/index";
+import { categoryTypes } from "../types";
 
 const {SELECT_CATEGORY} = categoryTypes;
 
 const initialState={
     categories:CATEGORIES,
     selected:null
-}
+};
 
 const categoryReducer=(state=initialState, action) =>{
     switch(action.type){
@@ -16,7 +16,7 @@ const categoryReducer=(state=initialState, action) =>{
 
         );
 
-        if(indexCategory===-1)return state;
+        if(indexCategory===-1) return state;
 
         return {
             ...state,

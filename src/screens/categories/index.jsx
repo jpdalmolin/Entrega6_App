@@ -2,9 +2,7 @@ import { Button, FlatList, SafeAreaView, Text, View } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 
 import { CategoryItem } from "../../components";
-import Products from "../products";
 import React from "react";
-import { colors } from "../../constants/theme/colors";
 import {selectCategory} from '../../store/actions'
 import { styles } from "./styles";
 

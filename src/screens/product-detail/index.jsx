@@ -1,6 +1,5 @@
 import { Text, View } from "react-native";
 
-import { PRODUCTS } from "../../constants/data";
 import React from "react";
 import { styles } from "./styles";
 import {useSelector} from "react-redux";
